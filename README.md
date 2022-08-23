@@ -44,25 +44,36 @@ Run on Terminal your php server and access the url from project in a web browser
 
 ## Developed solutions
 
-[migration] - aaaaaa
+###### migration
+aaaaaa
 
-[index] - aaaaaa
+###### index
+aaaaaa
 
-[routes] - aaaaaa
+###### routes
+aaaaaa
 
-[controller] - aaaaaa
+###### controller
+aaaaaa
 
-[auth] - aaaaaa
+###### auth
+aaaaaa
 
-[view] - aaaaaa
+###### view
+aaaaaa
 
-[ORMbyAttributes] - aaaaaa
+###### ORMbyAttributes
+aaaaaa
 
-[request] - aaaaaa
+###### request
+aaaaaa
 
-[errorsAndAlerts] - aaaaaa
+###### errorsAndAlerts
+aaaaaa
 
-[CRSFprotection] - aaaaaa
+###### CRSFprotection
+aaaaaa
 
-[PSRs] - aaaaaa
+###### PSRs
+aaaaaa
 

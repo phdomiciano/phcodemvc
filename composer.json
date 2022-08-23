@@ -1,4 +1,9 @@
 {
+    "name": "phdomiciano/phcodemvc",
+    "type": "project",
+    "description": "This is a simple CRUD of courses list with MVC but without Frameworks.",
+    "keywords": ["framework", "mvc", "courseslist", "CRUD", "courses"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "phcode\\": "src/",
