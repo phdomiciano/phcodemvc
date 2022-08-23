@@ -13,13 +13,6 @@ The challenge is not to use external frameworks but to develop an entire MVC str
 - DOCTRINE/ORM
 - SQLITE
 
-# Para configurar #
-- Instale o PHP 7.4 ou superior
-- Instale o composer
-- No terminal, vá até a pasta do projeto e execute: composer install
-- No terminal, vá até a pasta do projeto e execute: php -S localhost:8080 -t public
-- Acesse pelo navegador o endereço: http://localhost:8080/novo-curso
-
 ## Installation
 
 Install the package through [Composer](http://getcomposer.org/). 
