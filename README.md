@@ -46,7 +46,7 @@ Run on Terminal your php server and access the url from project in a web browser
 
 #### Migration
 To be used in a development environment, a script was created that can be executed by Terminal, for small instructions to the database, such as creating the database, executing migrations, consulting records and tables, among others.
-Para testar e saber mais execute no terminal: 
+For try and more information, run on Terminal: 
 
     php db.php help
 
@@ -68,18 +68,21 @@ The "validate()" method can receive an array of filters manually or capture the 
 The custom Request class can be configured in the "routes.php" file. If no custom Request is provided for the route, the system automatically loads the parent class, allowing manual validations.
 
 #### Controller
-The Controller parent class already has an entityManager and an object of the Request class, which will be explained below.
+The Controller parent class already has an entityManager and an object of the Request class.
 
 #### Auth
-The Auth class, located in the "src/infra" folder, can be used anywhere on the system. It handles and stores user authentication information, record ownership validation, and CRSF token management.
+The Auth class, located in the "src/infra" folder, can be used anywhere on the system. It handles and stores user authentication information, record ownership validation, and CSRF token management.
 
 #### View
 The View class, located in the "src/infra" folder, must be used in controllers to display views. This class is responsible for finding view files, managing alerts and errors with automatic capture.
+Alerts and errors are treated like flash messages, being automatically deleted after the first read.
 
 #### CSRF protection
 This code is concerned with CSRF (Cross-site request forgery). The Auth class manages random tokens that change with each submit and all forms must contain a hidden one with this token, which is automatically compared by the Request class every time some data is requested.
 Form submits don't work if the form doesn't have this hidden with valid token.
-Hidden can be easily created in any view, as the View class loads an Auth object with a method that generates a hidden. Just print <?=$auth->token();?> inside each form.
+Hidden can be easily created in any view, as the View class loads an Auth object with a method that generates a hidden. Just print this inside each form: 
+
+    <?=$auth->token();?>
 
 #### ORM by Attributes
 Doctrine was used as ORM, configured with mapping by Attributes instead of Annotations, in a more visual way and without having to use comments as code.
